@@ -4,7 +4,10 @@ const app = Vue.createApp({
     data(){
         return {
             message: 'Hello VueJS',
-            image: ''
+            image: {
+                source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTDq43xsge81SwhLSgYZz9GhEX7auaWnpicrT7nxWfQ&s',
+                title: 'random image'
+            }
         }
     },
 })
