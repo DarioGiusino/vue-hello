@@ -1,6 +1,7 @@
 // // console.log('vue ok', Vue);
 
 const app = Vue.createApp({
+    name: 'La mia prima app di Vue',
     data(){
         return {
             message: 'Hello VueJS',
