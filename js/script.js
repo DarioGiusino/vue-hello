@@ -14,3 +14,23 @@ const app = Vue.createApp({
 })
 
 app.mount('#app');
+
+
+
+//? Toggle dark mode
+
+const htmlElement = document.querySelector('html');
+const button = document.getElementById('button');
+
+let isLight = true;
+
+button.addEventListener('click', () => {
+    isLight = !isLight;
+
+    if(!isLight){
+        htmlElement.setAttribute('data-bs-theme', 'dark');
+    } else {
+        htmlElement.setAttribute('data-bs-theme', 'light');
+    }
+
+});
